@@ -41,7 +41,7 @@
             </div>
         </div>
         
-            <a href="/drmmsu/about/me/">关于我</a>
+            <a href="/drmmsu/about/me">关于我</a>
         
     </nav>
 </header>
@@ -201,7 +201,6 @@ cmake <span class="token parameter variable">--version</span><span aria-hidden="
 <h3 id="2-5-安装库和C"><a href="#2-5-安装库和C" class="headerlink" title="2.5 安装库和C++"></a>2.5 安装库和C++</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">apt</span> <span class="token function">install</span> build-essential
 <span class="token function">apt</span> <span class="token function">install</span> gdb <span class="token comment"># 调试</span>
 <span class="token function">which</span> gcc 
-<span class="token comment"># ----------swarmkv需要装的-----------</span>
 <span class="token comment"># 安装uuid</span>
 <span class="token function">apt</span> <span class="token function">install</span> uuid-dev
 <span class="token comment"># 安装gtest</span>
@@ -209,20 +208,7 @@ cmake <span class="token parameter variable">--version</span><span aria-hidden="
 <span class="token builtin class-name">cd</span> googletest
 <span class="token function">mkdir</span> build <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> build <span class="token operator">&amp;&amp;</span> cmake <span class="token punctuation">..</span> <span class="token operator">&amp;&amp;</span> <span class="token function">make</span> <span class="token parameter variable">-j4</span>
 <span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span>
-<span class="token function">sudo</span> ldconfig
-<span class="token comment"># 安装zlib</span>
-<span class="token function">apt-get</span> <span class="token function">install</span> zlib1g zlib1g-dev
-<span class="token comment"># 安装jemalloc </span>
-<span class="token comment"># https://github.com/aerospike/jemalloc/blob/master/INSTALL</span>
-<span class="token function">wget</span> https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2
-<span class="token builtin class-name">cd</span> jemalloc-5.3.0
-<span class="token function">apt-get</span> <span class="token function">install</span> autogen autoconf
-./autogen.sh
-<span class="token function">make</span>
-<span class="token function">make</span> <span class="token function">install</span>
-ldconfig
-<span class="token comment"># -----------crdt需要装的---------------------</span>
-<span class="token function">apt-get</span> <span class="token function">install</span> pkg-config<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">sudo</span> ldconfig<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="2-6-安装Clangd"><a href="#2-6-安装Clangd" class="headerlink" title="2.6 安装Clangd"></a>2.6 安装Clangd</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">apt-get</span> <span class="token function">install</span> clangd
 <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> clangd-12  <span class="token comment"># clangd-9</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -311,7 +297,7 @@ print<span class="token punctuation">(</span>redis_conn.get<span class="token pu
                 </div>
                 <div class="col-m-4">
                     <h3 class="title-date">时光机：</h3>
-                    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/drmmsu/archives/2023/11/">November 2023</a></li></ul>
+                    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/drmmsu/archives/2023/11/">十一月 2023</a></li></ul>
                 </div>
                 <div class="col-m-4">
                     <h3 class="title-tags">标签云：</h3>
