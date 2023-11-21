@@ -33,16 +33,16 @@ var Paul_Hingle = function (config) {
     };
 
     // 关灯切换
-    // this.night = function () {
-    //     if(body.classList.contains("dark-theme")){
-    //         body.classList.remove("dark-theme");
-    //         document.cookie = "night=false;" + "path=/;" + "max-age=21600";
-    //     }
-    //     else{
-    //         body.classList.add("dark-theme");
-    //         document.cookie = "night=true;" + "path=/;" + "max-age=21600";
-    //     }
-    // };
+    this.night = function () {
+        if(body.classList.contains("dark-theme")){
+            body.classList.remove("dark-theme");
+            document.cookie = "night=false;" + "path=/;" + "max-age=21600";
+        }
+        else{
+            body.classList.add("dark-theme");
+            document.cookie = "night=true;" + "path=/;" + "max-age=21600";
+        }
+    };
 
     // 目录树
     this.tree = function () {
